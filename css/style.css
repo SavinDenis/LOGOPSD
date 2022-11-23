@@ -26,16 +26,29 @@ body {
     color: #5e5e5e;
 }
 
-p{
+p {
     margin-block-start: 0px;
     margin-block-end: 0px;
     margin-inline-start: 0px;
     margin-inline-end: 0px;
 }
 
+label,
+input,
+select,
+textarea{
+    display: block;
+}
+
+section{
+    padding: 0;
+    margin: 0;
+
+}
+
 .container {
     max-width: 1170px;
-    padding: 0 15px;
+    padding: 0;
     margin: 0 auto;
 }
 
@@ -69,7 +82,6 @@ p{
     position: relative;
 }
 
-
 .header__tel {
     padding-left: 20px;
     padding-right: 30px;
@@ -90,8 +102,6 @@ p{
     position: absolute;
     left: 0;
 }
-
-
 
 .header__email {
     padding-left: 24px;
@@ -134,7 +144,6 @@ p{
     color: #1b1b1b;
     position: absolute;
     left: 20px;
-
 }
 
 .slider {
@@ -146,15 +155,11 @@ p{
 
 }
 
-
-
-
 .slider__item-content {
     text-align: center;
     padding-top: 120px;
     max-width: 665px;
     margin: 0 auto;
-
 }
 
 .slider__title {
@@ -189,11 +194,6 @@ p{
     cursor: pointer;
 }
 
-
-
-
-
-
 .default-btn {
     display: inline-block;
     font-size: 14px;
@@ -214,13 +214,10 @@ p{
     top: 50%;
     transform: translateY(-50%);
     color: #fff;
-
 }
 
 .slider__inner {
     position: relative;
-
-
 }
 
 .slick-btn {
@@ -235,7 +232,6 @@ p{
     color: #fafafa;
     cursor: pointer;
     outline: none;
-
 }
 
 .slick-btn::before {
@@ -272,19 +268,19 @@ p{
     padding: 50px 0 30px;
 }
 
-.about__top {
+.about__top,
+.form__top {
     margin-bottom: 70px;
     position: relative;
 }
 
-
-
-.about__title {
+.about__title,
+.form__title {
     padding-left: 140px;
     letter-spacing: 0.1px;
 }
 
-.about__title::before {
+.title::before {
     content: '';
     background-color: #ffc222;
     height: 2px;
@@ -295,14 +291,14 @@ p{
     top: 8px;
 }
 
-
-.about__top__text {
+.about__top-text,
+.form__top-text {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.about__text {
+.title__text {
     max-width: 530px;
     padding-left: 140px;
 }
@@ -310,12 +306,9 @@ p{
 .about__btn {
     display: block;
     padding: 10px 38px;
-    border: 3px solid rgba(230,230,230, 0.9);
+    border: 3px solid rgba(230, 230, 230, 0.9);
     color: #373636;
 }
-
-
-   
 
 .item__btn {
     color: #444343;
@@ -327,27 +320,26 @@ p{
     display: flex;
     justify-content: space-between;
     align-items: baseline;
-    
 }
 
-.about__item{
-    background-color: #f9f9f9 ;
-    box-shadow: 7px 7px 27px rgba(0,0,0, 0.1);
+.about__item {
+    background-color: #f9f9f9;
+    box-shadow: 7px 7px 27px rgba(0, 0, 0, 0.1);
     max-width: 360px;
 }
 
-.about__item + .about__item{
+.about__item+.about__item {
     margin-left: 30px;
 }
- .item__inner {
+
+.item__inner {
     padding: 20px 40px 30px;
- }
+}
 
 .item__img {
     display: block;
     margin: 0 auto;
     height: 54px;
-
 }
 
 .item__title {
@@ -355,11 +347,9 @@ p{
     font-family: 'Roboto', sans-serif;
 }
 
-
 .item__text {
     text-align: center;
 }
-
 
 .item__title {
     margin: 30px 0;
@@ -367,7 +357,6 @@ p{
 
 .item__text {
     margin-bottom: 70px;
-    
 }
 
 .about__links {
@@ -389,7 +378,7 @@ p{
 
 .company {
     background-image: url(../img/fon_company.jpg);
-    background-repeat:no-repeat;
+    background-repeat: no-repeat;
     background-size: cover;
 }
 
@@ -401,11 +390,11 @@ p{
 }
 
 .company__title,
-.company__text{
+.company__text {
     margin-bottom: 40px;
 }
 
-.company__title{
+.company__title {
     font-family: 'Roboto', sans-serif;
     font-size: 24px;
     color: #f9f9f9;
@@ -415,14 +404,83 @@ p{
 .company__text {
     line-height: 24px;
     font-size: 14px;
-   color: #d3d2d2;
+    color: #d3d2d2;
 }
-
-
 
 .company__link {
     color: #eff0f0;
 }
+
+.form {
+    padding-top: 50px;
+}
+
+.form__inner {
+    background-image: url(../img/girl.jpg);
+    background-position: right bottom;
+    background-repeat: no-repeat;
+}
+
+.form__box-inner {
+    display: flex;
+    
+}
+
+.form__box-left {
+    max-width: 260px;
+    width: 100%;
+}
+
+.form__label{
+    color: #1b1b1b;
+    margin-bottom: 8px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.form__input {
+    color: red;
+    outline: none;
+    padding: 0 10px;    
+}
+
+.form__input,
+.form__select {
+    width: 100%;
+    height: 40px; 
+    margin-bottom: 10px;
+    margin-top: 8px;
+    border:1px solid #e6e6e6;
+}
+
+.form__textarea{
+    width: 100%;
+    height: 192px;
+    margin-bottom: 10px;
+    margin-top: 8px;
+    border:1px solid #e6e6e6;
+}
+
+.form__box-right {
+    margin-left: 30px;
+    padding-bottom: 40px;
+    max-width: 555px;
+    width: 100%;
+}
+
+.form__box-btn{ 
+    display: flex;
+    justify-content: flex-end;
+}
+
+.form__btn {
+    background-color: transparent;
+    margin-top: 25px;
+}
+
+.form__btn::after{
+    color: #1b1b1b;
+}
+
 
 
 

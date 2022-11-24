@@ -27,4 +27,6 @@ $(function(){
         prevArrow: '<button type="button" class="slick-btn slick-prev"></button>',
         infinite: false
     });
+   
 });
+

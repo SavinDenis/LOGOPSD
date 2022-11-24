@@ -437,27 +437,26 @@ section{
     font-family: 'Roboto', sans-serif;
 }
 
-.form__input {
-    color: red;
-    outline: none;
-    padding: 0 10px;    
-}
+
 
 .form__input,
 .form__select {
     width: 100%;
     height: 40px; 
     margin-bottom: 10px;
-    margin-top: 8px;
+    margin-top: 5px;
     border:1px solid #e6e6e6;
+    outline: none;color:#444343;
+    padding: 0 10px;
 }
 
 .form__textarea{
     width: 100%;
-    height: 192px;
+    height: 185px;
     margin-bottom: 10px;
-    margin-top: 8px;
+    margin-top: 5px;
     border:1px solid #e6e6e6;
+    outline: none;
 }
 
 .form__box-right {
@@ -481,9 +480,63 @@ section{
     color: #1b1b1b;
 }
 
+.benefits {
+    background-image: url(../img/benefits_fon.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+}
+.container {
 
+}
+.benefits__items {
+    display: flex;
+    justify-content: space-between;
+}
+.benefits__item {
+    max-width: 360px;
+    padding-bottom: 38px;
+    padding-top: 50px;
+}
 
+.benefits__img{
+    border: 1px solid #ffc222;
+    height: 40px;
+    width: 40px;
+    margin: 0 auto;
+}
 
+.benefits__img  p{
+    text-align: center;
+    line-height: 40px;
+    color: #fff;
+    align-items: center;
+}
+.benefits__img  p::after{
+    content: "\f078";
+    font-family: 'icomoon';
+    color: #fff;
+}
+
+.benefits__title {
+    font-family: 'Roboto',sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 24px;
+    color: #f6f7f9;
+    text-align: center;
+    margin-bottom: 15px;
+    
+}
+.benefits__text {
+    font-size: 14px;
+    line-height: 24px;
+    color: #d3d2d2;
+    letter-spacing: 1.1px;
+    text-align: center;
+}
+
+/* jqformstyler */
 
 
 

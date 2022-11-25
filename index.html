@@ -297,7 +297,7 @@
                     <div class="news__box-inner">
                         <div class="news__box-slider">
                             <div class="news__slider-items">
-                                <div class="news__slider-item">
+                                <div class=" news__slider-item">
                                     <h3>
                                         Банкротство и ликвидация предприятия в Украине
                                     </h3>
@@ -364,7 +364,7 @@
                             </div>
                         </div>
                         <div class="news__box-items">
-                            <div class="news__box-item">
+                            <a href="#" class="news__box-item">
                                 <img src="img/news1.jpg" alt="">
                                 <h4>
                                     Новость компании
@@ -373,8 +373,8 @@
                                     На сегодняшний день, коллектив компании объединяет высокопрофессиональных экспертов
                                     имеющих специализации в отдельных областях права...»
                                 </p>
-                            </div>
-                            <div class="news__box-item">
+                            </a>
+                            <a href="#" class="news__box-item">
                                 <img src="img/news2.jpg" alt="">
                                 <h4>
                                     Новость компании
@@ -383,7 +383,7 @@
                                     На сегодняшний день, коллектив компании объединяет высокопрофессиональных экспертов
                                     имеющих специализации в отдельных областях права...»
                                 </p>
-                            </div>
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -431,9 +431,26 @@
         </div>
     </footer>
 
-   
+
     <div id="myModal">
-        <p>Контент</p>
+        <p class="myModal__title">Оставьте ваши данные</p>
+        <form class="myModal__form" action="">
+
+            <label class="form__label" for="">E-mail
+                <input class="form__input" type="email" placeholder="">
+            </label>
+            <label class="form__label" for="">Контактный телефон
+                <input class="form__input" type="tel" placeholder="">
+            </label>
+            <label class="form__label" for="">ФИО
+                <input class="form__input" type="text" placeholder="">
+            </label>
+            <div class="myModal__btn">
+                <button class="default-btn form__btn" type="submit">Получить консультацию</button>
+            </div>
+
+        </form>
+
         <span id="myModal__close" class="close">ₓ</span>
     </div>
     <div id="myOverlay"></div>
